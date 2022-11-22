@@ -191,12 +191,12 @@ a {
 }
 
 #edit_styles {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #edit_styles .image_wraper {
     position: relative;
-    height: 450px;
+    height: 280px;
     width: 100%;
 }
 
@@ -211,7 +211,7 @@ a {
 }
 
 #edit_styles .image_wraper .img-2 {
-    top: 118px;
+    top: 50px;
     left: 200px;
     width: 292px;
     height: 174px;
@@ -219,7 +219,7 @@ a {
 
 #edit_styles .image_wraper .img-3 {
     left: 400px;
-    top: 230px;
+    top: 100px;
     width: 300px;
     height: 180px;
 }
@@ -263,4 +263,8 @@ a {
     margin-bottom: 25px;
     text-align: left;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+#resources_credits {
+    margin-top: 50px;
 }
