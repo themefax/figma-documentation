@@ -21,12 +21,29 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+body {
+    font-family: var(--bodyFont);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--colorBlack);
+}
+
 p,
 span,
 ul,
@@ -35,7 +52,19 @@ li,
 a {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    color: var(--paraColor);
+}
+
+:root {
+    --colorPrimary: #197AFF;
+    --paraColor: #636E72;
+    --colorBlack: #2D3436;
+    --colorWhite: #ffffff;
+    --bodyFont: 'Poppins', sans-serif;
+    --boxShadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+
+
+
 }
 
 .navbar {
@@ -54,7 +83,7 @@ a {
 }
 
 .navbar .navbar-brand img {
-    width: 150px;
+    width: 150px !important;
     margin-right: 20px;
 }
 
@@ -64,8 +93,8 @@ a {
     top: 12px;
     text-transform: capitalize;
     font-size: 14px;
-    background: #197AFF;
-    color: #F1F7FF;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
     padding: 5px 15px;
     border-radius: 30px;
 }
@@ -88,7 +117,8 @@ a {
     text-align: center;
     border-radius: 50%;
     transition: all linear .3s;
-    box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    box-shadow: var(--boxShadow);
+    color: var(--colorPrimary);
 }
 
 .navbar .navbar-nav .nav-item .review {
@@ -110,14 +140,14 @@ a {
 }
 
 #main .sidebar ul li a {
-    color: #2D3436;
+    color: var(--colorBlack);
     font-size: 14px;
     font-weight: 600;
     background: #F1F7FF;
     padding: 11px 30px;
     margin-bottom: 10px;
     margin-top: 0px;
-    width: 300px;
+    width: 100%;
     border-radius: 30px;
     text-transform: capitalize;
     transition: all linear .3s;
@@ -160,7 +190,7 @@ a {
 #resources_credits h2,
 #welcome h2 {
     margin-bottom: 25px;
-    color: #197AFF;
+    color: var(--colorPrimary);
     font-size: 20px;
     font-weight: 600;
     background: #F1F7FF;
@@ -175,7 +205,7 @@ a {
 #edit_styles p,
 #resources_credits p {
     margin-bottom: 20px;
-    color: #636E72;
+    color: var(--paraColor);
     font-size: 15px;
 }
 
@@ -186,7 +216,7 @@ a {
 #resources_credits h3 {
     font-weight: 600;
     font-size: 18px;
-    color: #2D3436;
+    color: var(--colorBlack);
     margin-bottom: 20px;
     text-transform: capitalize;
 }
@@ -196,6 +226,7 @@ a {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     margin-top: 30px;
+    border-top-right-radius: 30px;
 }
 
 #figmapage ul {
@@ -251,6 +282,12 @@ a {
 
 #resources_credits ul li {
     margin-bottom: 15px;
+    color: var(--paraColor);
+}
+
+#resources_credits ul li a {
+    text-transform: capitalize;
+    color: var(--colorPrimary);
 }
 
 #welcome {
@@ -272,7 +309,7 @@ a {
     padding: 20px;
     background: #fff;
     text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    box-shadow: var(--boxShadow);
 }
 
 #edit_styles .edit_styles_item {
@@ -281,7 +318,7 @@ a {
     background: #fff;
     margin-bottom: 25px;
     text-align: left;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    box-shadow: var(--boxShadow);
 }
 
 #resources_credits {
