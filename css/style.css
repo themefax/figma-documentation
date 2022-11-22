@@ -110,21 +110,39 @@ a {
 }
 
 #main .sidebar ul li a {
-    color: #197AFF;
-    font-size: 15px;
+    color: #2D3436;
+    font-size: 14px;
     font-weight: 600;
     background: #F1F7FF;
-    padding: 15px 30px;
+    padding: 11px 30px;
     margin-bottom: 10px;
     margin-top: 0px;
     width: 300px;
     border-radius: 30px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    border: 1px solid #eee;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+#main .sidebar ul li a:hover {
+    color: #197AFF;
+}
+
+#main .sidebar ul li:last-child a {
+    margin-bottom: 0;
 }
 
 #main .sidebar {
     height: 100vh;
     position: sticky;
     top: 140px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 #main .content {
@@ -188,6 +206,7 @@ a {
 
 #figmapage ul li {
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 
 #edit_styles {
