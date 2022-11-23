@@ -2,6 +2,10 @@
     #welcome img {
         height: 370px !important;
     }
+
+    .TF_documentation_menu {
+        height: 70vh;
+    }
 }
 
 
@@ -60,6 +64,20 @@
 
     #welcome img {
         height: 350px !important;
+    }
+
+    #resources_credits ul {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .TF_documentation_menu {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .TF_documentation {
+        margin-top: 120px;
     }
 
 }
@@ -133,6 +151,21 @@
     #edit_styles {
         margin-top: 25px;
     }
+
+    #resources_credits ul {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .TF_documentation_menu {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .TF_documentation {
+        margin-top: 120px;
+    }
+
 }
 
 
@@ -197,17 +230,26 @@
         margin-bottom: 25px;
     }
 
-
-    #resources_credits ul {
-        list-style: none;
-    }
-
     #welcome img {
         height: 200px !important;
     }
 
     #edit_styles {
         margin-top: 25px;
+    }
+
+    #resources_credits ul {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+
+    .TF_documentation_menu {
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .TF_documentation {
+        margin-top: 120px;
     }
 
 }

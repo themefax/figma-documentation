@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
-    outline: 0;
 }
 
 ul,
-ol {
+ol,
+li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -21,18 +22,6 @@ a:hover {
     text-decoration: none;
 }
 
-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-}
-
-body {
-    font-family: var(--bodyFont);
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
 h1,
 h2,
 h3,
@@ -41,18 +30,50 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    color: var(--colorBlack);
 }
 
 p,
-span,
-ul,
-ol,
-li,
-a {
+span {
+    font-size: 16px;
+    font-weight: 400;
     margin: 0;
-    padding: 0;
-    color: var(--paraColor);
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: var(--bodyFont);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a6a6ac;
+}
+
+button {
+    border: none;
 }
 
 :root {
@@ -62,11 +83,9 @@ a {
     --colorWhite: #ffffff;
     --bodyFont: 'Poppins', sans-serif;
     --boxShadow: rgb(0 0 0 / 8%) 0px 4px 12px;
-
-
-
 }
 
+/* =========MENU START========= */
 .navbar {
     width: 100%;
     height: 90px;
@@ -135,11 +154,28 @@ a {
     color: #F1F7FF;
 }
 
-#main {
+/* =========MENU END=========== */
+
+
+/* =========DOCUMENTATION START=========== */
+.TF_documentation {
     margin-top: 140px;
+    margin-bottom: 50px;
 }
 
-#main .sidebar ul li a {
+.TF_documentation_menu {
+    height: 73vh;
+    position: sticky;
+    top: 140px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.TF_documentation_menu::-webkit-scrollbar {
+    display: none;
+}
+
+.TF_documentation_menu a {
     color: var(--colorBlack);
     font-size: 14px;
     font-weight: 600;
@@ -148,39 +184,26 @@ a {
     margin-bottom: 10px;
     margin-top: 0px;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 30px !important;
     text-transform: capitalize;
     transition: all linear .3s;
-    border: 1px solid #eee;
+    border: 1px solid #eee !important;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -o-border-radius: 30px !important;
 }
 
-#main .sidebar ul li a:hover {
-    color: #197AFF;
-}
-
-#main .sidebar ul li:last-child a {
-    margin-bottom: 0;
-}
-
-#main .sidebar {
-    height: 100vh;
-    position: sticky;
-    top: 140px;
-    margin-bottom: 50px;
-    overflow: hidden;
-    overflow-y: auto;
-}
-
-#main .content {
-    margin-bottom: 50px;
-}
-
-#main .content::-webkit-scrollbar {
-    display: none;
+.TF_documentation_menu a:hover,
+.TF_documentation_menu a.active {
+    background: #F1F7FF;
+    color: var(--colorPrimary) !important;
+    border-color: var(--colorPrimary) !important;
+    margin-top: 0 !important;
 }
 
 #general_information h2,
@@ -324,3 +347,21 @@ a {
 #resources_credits {
     margin-top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========DOCUMENTATION END=========== */
